@@ -33,7 +33,7 @@ switch (number)
         Console.WriteLine(number + "-> Да");
         break;
     default:
-    Console.WriteLine("Такого номера дня недели не существует, введите число от 1 до 7");
-    break;
-    
+        Console.WriteLine("Такого номера дня недели не существует, введите число от 1 до 7");
+        break;
+
 }
