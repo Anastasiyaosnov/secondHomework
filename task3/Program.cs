@@ -1,27 +1,32 @@
 ﻿// Задача 3: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет. 
 // Не использовать строки для расчета.
 
-// int Prompt(string message)
-// {
-// System.Console.Write($"{message} >");
-// int answer = Convert.ToInt32(Console.ReadLine());
-// return answer;
-// }
 
-// bool ValidateNumber(int number)
-// {
-// if (number >= 100)
-// {
-// return true;
-// }
+int Prompt(string message)
+{
+System.Console.Write($"{message} >");
+int uservalue = Convert.ToInt32(Console.ReadLine());
+return uservalue;
+}
 
-// System.Console.WriteLine("Третьей цифры нет");
-// return false;
-// }
+int number = Prompt ("Введите число");
+Console.WriteLine(number);
 
 
-// int number = Prompt ("Введите число");
-// int result = number / 100;
-// Console.WriteLine(result);
+int value = number;
 
-Console.WriteLine(103%10);
+if (number >= 100)
+
+{
+   while (value >= 999)
+    {
+       value = value / 10;
+    }
+    Console.WriteLine ($"Третья цифра заданного числа = {value %10}");
+}
+else 
+{
+Console.WriteLine("Нет третьего числа");
+}
+
+
